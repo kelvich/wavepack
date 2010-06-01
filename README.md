@@ -43,10 +43,10 @@ Available solvers:
 
 todo
 ----
-
 - Fix WavePack!
 - Documentate sources.
 - Write some tests on accuracy.
+
 
 
 
