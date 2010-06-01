@@ -46,8 +46,3 @@ todo
 - Fix WavePack solver!
 - Documentate sources.
 - Write some tests on accuracy.
-
-
-
-
-
