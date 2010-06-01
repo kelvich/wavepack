@@ -35,9 +35,11 @@ contents
 --------
 
 Available potentials:
+
 - Gauss potential
 
 Available solvers:
+
 - PhaseFunc -- phase functions method. Works good at low energies, i.e. tenths MeV for NN-scattering.
 - WavePack -- wave packet approximation without partial wave decomposition. Slower, but better on higher energies. Right now results are *not correct*!
 
