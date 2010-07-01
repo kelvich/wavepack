@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 import scatter
 
-potential = scatter.potential.Gauss(2.236,-41.47)
+potential = scatter.potential.Gauss(2.2,-5.5)
 
-solver = scatter.solver.PhaseFunctions(potential,1000.,5.)
+solver = scatter.solver.PhaseFunctions(potential,1000.,100.)
 data1 = solver.solve(80)
 data1.print_dcs()
 
-solver = scatter.solver.WavePack(potential,1000.,5.)
-data2 = solver.solve(12,15,2.)
+solver = scatter.solver.WavePack(potential,1000.,100.)
+data2 = solver.solve(12,15,4.)
 data2.print_dcs()
 
 s = scatter.ScatterData(data2.theta)

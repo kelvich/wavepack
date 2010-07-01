@@ -51,7 +51,7 @@ class WavePack:
             G[i] = (k2-k1)
             G[i] += (k0/2.)*log( abs(((k2+k0)*(k1-k0))/((k2-k0)*(k1+k0))) )
             G[i] += -1j*(k0/2.)*pi*self.delta(i_k0,i_k)
-            G[i] *= ( -1*cos(mesh_t[i_t+1]) + cos(mesh_t[i_t]) )/3.
+            G[i] *= ( -1*cos(mesh_t[i_t+1]) + cos(mesh_t[i_t]) )
         V0 = zeros(k.size*t.size,dtype=complex)
         for i in range(V0.size):
             i_k = i/t.size

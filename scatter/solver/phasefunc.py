@@ -20,7 +20,7 @@ class PhaseFunctions:
         return (ph)
 
     def solve(self,moments):
-        r = arange(0.00001, 5*self.a, 0.05)
+        r = arange(0.00001, 100*self.a, 10.0)
         shifts=[]
         for l in range(moments):
             phase = odeint(self.phase_eq, 0, r, (l,))
